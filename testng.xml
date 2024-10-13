@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          parallel="methods" thread-count="4"
+          name="/Users/ariarangajanan/Documents/Ari/MIT/semister 04/MIT4201 QA/Automation testing/Annotations">
+        <classes>
+<!--            <class name="dataProvider.dataProviderEx">-->
+<!--                <methods>-->
+<!--                    <include name="validateUser"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="parallelExecution.ParallelExample">
+                <methods>
+                    <include name="one"/>
+                    <include name="two"/>
+                    <include name="three"/>
+                    <include name="four"/>
+                </methods>
+            </class>
+<!--            <class name="testNgAnnotations.TestNgEx">-->
+<!--                <methods>-->
+<!--                    <include name="one"/>-->
+<!--                    <include name="two"/>-->
+<!--                    <include name="three"/>-->
+<!--                    <include name="four"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>
